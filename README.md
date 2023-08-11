@@ -16,3 +16,16 @@ adding a _sigma_ will create a normal distribution around _sleep time_ to get a 
 -v makes it noisy with debug.
 
 Read the code, use it as an example, and enjoy life.
+
+
+TODO:
+
+Make a decorator for logging ETA of loops:
+
+    @eta_log
+    def upload_one_thing():
+        do_the_upload_that_takes_time()
+
+    def upload_all():
+        for item in everything:
+             upload_one_thing(item)
